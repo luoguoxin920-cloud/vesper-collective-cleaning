@@ -18,7 +18,7 @@ export default function HomePage() {
         <div className="mx-auto grid max-w-7xl items-center gap-10 px-4 py-12 sm:px-6 lg:grid-cols-[1fr_0.9fr] lg:px-8 lg:py-20">
           <div>
             <p className="text-sm font-semibold uppercase tracking-[0.18em] text-harbor">
-              Cleaning Services Across the United States
+              {company.serviceAreaStatement}
             </p>
             <h1 className="mt-5 max-w-3xl text-4xl font-bold tracking-tight text-ink sm:text-6xl">
               {company.name}
@@ -92,7 +92,7 @@ export default function HomePage() {
               Cleaning support for everyday spaces.
             </h2>
             <p className="mt-5 text-base leading-7 text-ink/70">
-              VESPER COLLECTIVE LLC provides residential and commercial cleaning services across the
+              VESPER COLLECTIVE LLC provides residential and commercial cleaning services for customers in
               {` ${company.serviceArea}`}. Customers can request service online, share cleaning priorities,
               confirm appointment details, and receive service-related SMS updates when they choose to opt in.
             </p>

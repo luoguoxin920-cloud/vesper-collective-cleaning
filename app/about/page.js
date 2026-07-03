@@ -11,7 +11,7 @@ export default function AboutPage() {
     <>
       <PageHero eyebrow="About Us" title="Straightforward cleaning services with professional communication.">
         <p>
-          {company.name} is a cleaning services business serving customers across the {company.serviceArea}.
+          {company.name} is a cleaning services business serving customers in {company.serviceArea}.
           We focus on practical cleaning support, clear scheduling, and respectful service.
         </p>
       </PageHero>

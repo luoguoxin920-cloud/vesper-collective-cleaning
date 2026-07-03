@@ -19,7 +19,7 @@ export default function TermsPage() {
           <h2>Use of This Website</h2>
           <p>
             This website provides information about {company.name}, a residential and commercial cleaning
-            services company serving customers in the {company.serviceArea}. By using this website, you agree
+            services company serving customers in {company.serviceArea}. By using this website, you agree
             to these Terms & Conditions.
           </p>
 

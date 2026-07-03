@@ -8,7 +8,7 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata = {
   title: "VESPER COLLECTIVE LLC | Cleaning Services",
   description:
-    "Residential and commercial cleaning services from VESPER COLLECTIVE LLC serving customers across the United States.",
+    "Residential and commercial cleaning services from VESPER COLLECTIVE LLC serving Sheridan, WY and surrounding areas.",
   keywords: [
     "cleaning services",
     "residential cleaning",

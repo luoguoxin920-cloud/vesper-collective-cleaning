@@ -35,7 +35,7 @@ export default function ServicesPage() {
     <>
       <PageHero eyebrow="Services" title="Cleaning services planned around your space and schedule.">
         <p>
-          We provide cleaning support for homes and light commercial spaces across the {company.serviceArea}.
+          We provide cleaning support for homes and light commercial spaces in {company.serviceArea}.
           Service details can be discussed directly when you contact us.
         </p>
       </PageHero>

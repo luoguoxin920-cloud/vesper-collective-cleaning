@@ -4,7 +4,7 @@ import Link from "next/link";
 import { useState } from "react";
 import { company } from "@/components/siteData";
 
-const smsConsentText = `I agree to receive SMS messages from [${company.name}] regarding appointment reminders, arrival updates, and customer support. Message frequency may vary. Message and data rates may apply. Reply STOP to opt out, HELP for help. Consent is not a condition of purchase.`;
+const smsConsentText = `I agree to receive SMS messages from ${company.name} regarding appointment reminders, arrival updates, and customer support. Message frequency may vary. Message and data rates may apply. Reply STOP to opt out, HELP for help. Consent is not a condition of purchase.`;
 
 export default function LeadForm({ formType = "Contact Request", buttonText = "Submit Request" }) {
   const [status, setStatus] = useState("idle");
@@ -50,7 +50,7 @@ export default function LeadForm({ formType = "Contact Request", buttonText = "S
 
       form.reset();
       setStatus("success");
-      setMessage("Thank you. Your request has been submitted, and your SMS consent was recorded.");
+      setMessage("Thank you. Your request was received, and your SMS consent was recorded.");
     } catch (error) {
       setStatus("error");
       setMessage(error.message || "Something went wrong. Please try again.");

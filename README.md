@@ -1,6 +1,6 @@
 # VESPER COLLECTIVE LLC Website
 
-Professional Next.js + Tailwind CSS website for VESPER COLLECTIVE LLC, a cleaning services business serving customers in the United States.
+Professional Next.js + Tailwind CSS website for VESPER COLLECTIVE LLC, a cleaning services business serving Sheridan, WY and surrounding areas.
 
 ## Pages
 
