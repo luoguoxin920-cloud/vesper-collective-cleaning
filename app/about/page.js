@@ -14,6 +14,7 @@ export default function AboutPage() {
           {company.name} is a cleaning services business serving customers in {company.serviceArea}.
           We focus on practical cleaning support, clear scheduling, and respectful service.
         </p>
+        <p>{company.serviceAreaStatement}</p>
       </PageHero>
 
       <Section className="bg-white">

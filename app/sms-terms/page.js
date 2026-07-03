@@ -14,6 +14,11 @@ export default function SmsTermsPage() {
         <div className="prose prose-slate max-w-4xl">
           <p className="text-sm text-ink/60">Last updated: July 3, 2026</p>
 
+          <h2>Business and Service Area</h2>
+          <p>
+            {company.name} provides residential and commercial cleaning services. {company.serviceAreaStatement}
+          </p>
+
           <h2>Program Description</h2>
           <p>
             When you opt in to SMS messages from {company.name}, you may receive text messages related to

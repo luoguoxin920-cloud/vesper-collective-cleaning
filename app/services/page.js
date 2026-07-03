@@ -38,6 +38,7 @@ export default function ServicesPage() {
           We provide cleaning support for homes and light commercial spaces in {company.serviceArea}.
           Service details can be discussed directly when you contact us.
         </p>
+        <p>{company.serviceAreaStatement}</p>
       </PageHero>
 
       <Section className="bg-white">

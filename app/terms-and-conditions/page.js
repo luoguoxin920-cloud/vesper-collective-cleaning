@@ -17,8 +17,8 @@ export default function TermsPage() {
           <h2>Use of This Website</h2>
           <p>
             By using this website, you agree to these Terms & Conditions. This website provides general
-            information about {company.name} and our cleaning services. Website content may be updated at
-            any time without notice.
+            information about {company.name} and our residential and commercial cleaning services.
+            {` ${company.serviceAreaStatement}`} Website content may be updated at any time without notice.
           </p>
 
           <h2>Service Requests</h2>

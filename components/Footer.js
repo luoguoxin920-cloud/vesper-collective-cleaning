@@ -12,6 +12,7 @@ export default function Footer() {
             Residential and commercial cleaning services with appointment scheduling, reminders, arrival updates,
             and customer support communications.
           </p>
+          <p className="mt-3 text-sm font-semibold text-white/85">{company.serviceAreaStatement}</p>
         </div>
 
         <div>

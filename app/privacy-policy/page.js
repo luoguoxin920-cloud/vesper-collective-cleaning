@@ -14,6 +14,11 @@ export default function PrivacyPolicyPage() {
         <div className="prose prose-slate max-w-4xl">
           <p className="text-sm text-ink/60">Last updated: July 3, 2026</p>
 
+          <h2>Business and Service Area</h2>
+          <p>
+            {company.name} provides residential and commercial cleaning services. {company.serviceAreaStatement}
+          </p>
+
           <h2>Information We Collect</h2>
           <p>
             {company.name} may collect information you provide through our website, phone calls, email,

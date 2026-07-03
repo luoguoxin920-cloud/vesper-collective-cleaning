@@ -50,7 +50,9 @@ export default function LeadForm({ formType = "Contact Request", buttonText = "S
 
       form.reset();
       setStatus("success");
-      setMessage("Thank you. Your request was received, and your SMS consent was recorded.");
+      setMessage(
+        `Thank you. Your request has been received. If you opted in to SMS, ${company.name} may contact you about appointment reminders, arrival updates, and customer support.`
+      );
     } catch (error) {
       setStatus("error");
       setMessage(error.message || "Something went wrong. Please try again.");
