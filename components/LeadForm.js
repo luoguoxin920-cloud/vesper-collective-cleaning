@@ -4,7 +4,8 @@ import Link from "next/link";
 import { useState } from "react";
 import { company } from "@/components/siteData";
 
-const smsConsentText = `I agree to receive SMS messages from ${company.name} at the phone number provided regarding appointment reminders, scheduling updates, technician arrival notifications, and customer support. Message frequency may vary. Message and data rates may apply. Reply STOP to opt out. Reply HELP for help. Consent is not a condition of purchase.`;
+const smsConsentText =
+  "I agree to receive SMS messages from VESPER COLLECTIVE LLC at the phone number provided regarding appointment reminders, scheduling updates, technician arrival notifications, and customer support. Message frequency may vary. Message and data rates may apply. Reply STOP to opt out. Reply HELP for help. Consent is not a condition of purchase.";
 const successMessage = [
   `Thank you for contacting ${company.name}.`,
   "Your request has been received successfully.",
@@ -112,28 +113,29 @@ export default function LeadForm({ formType = "Contact Request", buttonText = "S
         />
       </label>
 
-      <label className="mt-4 flex items-start gap-3 rounded border border-ink/10 bg-white p-4">
-        <input
-          type="checkbox"
-          name="smsOptIn"
-          value="I agree"
-          required
-          className="focus-ring mt-1 h-4 w-4 rounded border-ink/30 text-harbor"
-        />
-        <span className="text-sm leading-6 text-ink/75">{smsConsentText}</span>
-      </label>
-
-      <p className="mt-3 text-sm leading-6 text-ink/70">
-        View our{" "}
-        <Link href="/terms" className="font-semibold text-harbor underline underline-offset-4">
-          Terms & Conditions
-        </Link>{" "}
-        and{" "}
-        <Link href="/privacy-policy" className="font-semibold text-harbor underline underline-offset-4">
-          Privacy Policy
-        </Link>
-        .
-      </p>
+      <div className="mt-4 rounded border border-ink/10 bg-white p-4">
+        <label className="flex items-start gap-3">
+          <input
+            type="checkbox"
+            name="smsOptIn"
+            value="I agree"
+            required
+            className="focus-ring mt-1 h-4 w-4 rounded border-ink/30 text-harbor"
+          />
+          <span className="text-sm leading-6 text-ink/75">{smsConsentText}</span>
+        </label>
+        <p className="mt-3 pl-7 text-sm leading-6 text-ink/70">
+          View our{" "}
+          <Link href="/terms" className="font-semibold text-harbor underline underline-offset-4">
+            Terms & Conditions
+          </Link>{" "}
+          and{" "}
+          <Link href="/privacy-policy" className="font-semibold text-harbor underline underline-offset-4">
+            Privacy Policy
+          </Link>
+          .
+        </p>
+      </div>
 
       <button
         type="submit"
