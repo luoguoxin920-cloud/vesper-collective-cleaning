@@ -16,7 +16,7 @@ export default function BookAppointmentPage() {
       <PageHero eyebrow="Book Appointment" title="Request a cleaning appointment.">
         <p>
           Tell us about the property, preferred timing, and cleaning needs. We will use your details to respond
-          about scheduling, appointment reminders, arrival updates, and customer support.
+          about scheduling, appointment reminders, technician arrival notifications, and customer support.
         </p>
       </PageHero>
 

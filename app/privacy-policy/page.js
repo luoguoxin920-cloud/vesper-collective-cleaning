@@ -33,20 +33,22 @@ export default function PrivacyPolicyPage() {
             and operate our business.
           </p>
 
-          <h2>Mobile Information and Marketing Restrictions</h2>
+          <h2>SMS Communications</h2>
+          <p>
+            If you choose to receive SMS communications from {company.name}, we collect your mobile phone
+            number and your consent solely for providing appointment confirmations, scheduling updates,
+            technician arrival notifications, and customer support.
+          </p>
           <p>
             We do not sell, rent, or share your personal information or mobile phone number with third parties
             for marketing purposes.
           </p>
           <p>
-            We do not sell or share mobile numbers, SMS opt-in consent, or SMS message data with third parties
-            or affiliates for their marketing or promotional purposes. We may share this information only with
-            service providers when necessary to operate our SMS program and provide customer communications.
+            Text messaging originator opt-in data and consent will not be shared with any third parties,
+            excluding aggregators and providers of the text messaging services.
           </p>
           <p>
-            If you opt in to receive SMS messages, we use your mobile number to send appointment reminders,
-            arrival updates, and customer support messages. You may opt out by replying STOP or request help
-            by replying HELP.
+            You may opt out of SMS communications at any time by replying STOP. Reply HELP for assistance.
           </p>
 
           <h2>Service Providers</h2>

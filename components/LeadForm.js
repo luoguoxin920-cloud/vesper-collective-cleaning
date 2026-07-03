@@ -4,7 +4,13 @@ import Link from "next/link";
 import { useState } from "react";
 import { company } from "@/components/siteData";
 
-const smsConsentText = `I agree to receive SMS messages from ${company.name} regarding appointment reminders, arrival updates, and customer support. Message frequency may vary. Message and data rates may apply. Reply STOP to opt out, HELP for help. Consent is not a condition of purchase.`;
+const smsConsentText = `I agree to receive SMS messages from ${company.name} at the phone number provided regarding appointment reminders, scheduling updates, technician arrival notifications, and customer support. Message frequency may vary. Message and data rates may apply. Reply STOP to opt out. Reply HELP for help. Consent is not a condition of purchase.`;
+const successMessage = [
+  `Thank you for contacting ${company.name}.`,
+  "Your request has been received successfully.",
+  "If you opted in for SMS notifications, you may receive appointment confirmations, scheduling updates, technician arrival notifications, and customer support messages.",
+  "Reply STOP to opt out or HELP for assistance.",
+];
 
 export default function LeadForm({ formType = "Contact Request", buttonText = "Submit Request" }) {
   const [status, setStatus] = useState("idle");
@@ -50,9 +56,7 @@ export default function LeadForm({ formType = "Contact Request", buttonText = "S
 
       form.reset();
       setStatus("success");
-      setMessage(
-        `Thank you. Your request has been received. If you opted in to SMS, ${company.name} may contact you about appointment reminders, arrival updates, and customer support.`
-      );
+      setMessage(successMessage.join("\n"));
     } catch (error) {
       setStatus("error");
       setMessage(error.message || "Something went wrong. Please try again.");
@@ -140,14 +144,18 @@ export default function LeadForm({ formType = "Contact Request", buttonText = "S
       </button>
 
       {message ? (
-        <p
+        <div
           className={`mt-4 rounded px-4 py-3 text-sm ${
             status === "success" ? "bg-mint text-ink" : "bg-red-50 text-red-700"
           }`}
           role="status"
         >
-          {message}
-        </p>
+          {message.split("\n").map((line) => (
+            <p key={line} className="leading-6">
+              {line}
+            </p>
+          ))}
+        </div>
       ) : null}
     </form>
   );

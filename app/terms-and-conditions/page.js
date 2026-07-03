@@ -31,9 +31,10 @@ export default function TermsPage() {
           <h2>SMS Communications</h2>
           <p>
             If you provide your mobile phone number and opt in, you agree to receive SMS messages from
-            {company.name} regarding appointment reminders, arrival updates, and customer support. Message
-            frequency may vary. Message and data rates may apply. Reply STOP to opt out. Reply HELP for help.
-            Consent is not a condition of purchase.
+            {company.name} at the phone number provided regarding appointment reminders, scheduling updates,
+            technician arrival notifications, and customer support. Message frequency may vary. Message and
+            data rates may apply. Reply STOP to opt out. Reply HELP for help. Consent is not a condition of
+            purchase.
           </p>
 
           <h2>Customer Responsibilities</h2>

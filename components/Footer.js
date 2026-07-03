@@ -49,6 +49,9 @@ export default function Footer() {
             <Link href="/sms-terms" className="hover:text-white">
               SMS Terms
             </Link>
+            <Link href="/contact" className="hover:text-white">
+              Contact
+            </Link>
           </div>
         </div>
       </div>

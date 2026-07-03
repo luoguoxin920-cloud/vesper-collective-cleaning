@@ -31,3 +31,11 @@ body {
 .prose p {
   @apply mt-4 leading-7 text-ink/70;
 }
+
+.prose ul {
+  @apply mt-4 list-disc space-y-2 pl-6 text-ink/70;
+}
+
+.prose li {
+  @apply leading-7;
+}

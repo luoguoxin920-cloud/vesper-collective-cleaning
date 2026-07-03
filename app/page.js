@@ -111,32 +111,48 @@ export default function HomePage() {
       <Section className="bg-linen">
         <div className="grid gap-10 lg:grid-cols-[0.75fr_1fr] lg:items-start">
           <div>
-            <p className="text-sm font-semibold uppercase tracking-[0.18em] text-harbor">Customer Workflow</p>
+            <p className="text-sm font-semibold uppercase tracking-[0.18em] text-harbor">How It Works</p>
             <h2 className="mt-4 text-3xl font-bold tracking-tight text-ink sm:text-4xl">
-              How booking and SMS updates work.
+              How It Works
             </h2>
             <p className="mt-5 text-base leading-7 text-ink/70">
               The opt-in process is shown directly on our Contact and Book Appointment forms. Customers must
-              check the SMS consent box before submitting if they want text updates. No login or external
-              document is required to review the consent language.
+              check the SMS consent box before submitting if they want text updates. SMS messages are used for
+              appointment confirmations, scheduling updates, technician arrival notifications, and customer
+              support. No login or external document is required to review the consent language.
             </p>
           </div>
-          <div className="grid gap-4 sm:grid-cols-3">
+          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {[
               {
                 icon: CalendarCheck,
-                title: "1. Request Service",
-                text: "Submit your name, email, phone number, and cleaning needs through our website form.",
+                title: "1. Request a Quote",
+                text: "Submit your name, email, phone number, and cleaning needs through the Contact or Book Appointment form.",
               },
               {
                 icon: CheckCircle2,
-                title: "2. Confirm Details",
-                text: "We review the request and coordinate appointment timing, scope, and access details.",
+                title: "2. Schedule Your Appointment",
+                text: "We review your request and coordinate service timing, property details, and cleaning priorities.",
               },
               {
                 icon: MessageSquareText,
-                title: "3. Receive Updates",
-                text: "If you opt in, SMS may be used for reminders, arrival notifications, and support.",
+                title: "3. Receive SMS Confirmation",
+                text: "If you opt in, SMS may confirm your appointment details and provide scheduling updates.",
+              },
+              {
+                icon: Clock,
+                title: "4. Receive Technician Arrival Notification",
+                text: "SMS may be used to notify you when a technician is on the way or when timing changes.",
+              },
+              {
+                icon: Home,
+                title: "5. Cleaning Service Completed",
+                text: "The requested residential or commercial cleaning service is completed according to the agreed scope.",
+              },
+              {
+                icon: ShieldCheck,
+                title: "6. Customer Follow-up",
+                text: "We may follow up for customer support, service questions, or appointment-related assistance.",
               },
             ].map((step) => (
               <div key={step.title} className="rounded bg-white p-5 shadow-sm">

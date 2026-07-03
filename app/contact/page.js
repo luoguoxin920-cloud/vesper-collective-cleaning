@@ -14,7 +14,8 @@ export default function ContactPage() {
       <PageHero eyebrow="Contact Us" title="Request service or ask a question.">
         <p>
           Send us your contact information and service details. We may follow up by phone, email, or SMS if you
-          choose to opt in to text messages.
+          choose to opt in to text messages for appointment reminders, scheduling updates, technician arrival
+          notifications, and customer support.
         </p>
       </PageHero>
 
