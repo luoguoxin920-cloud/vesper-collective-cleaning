@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #fbfaf7;
+  color: #14213d;
+}
+
+::selection {
+  background: #dff3ea;
+  color: #14213d;
+}
+
+.focus-ring {
+  @apply focus:outline-none focus:ring-2 focus:ring-harbor focus:ring-offset-2;
+}
+
+.prose h2 {
+  @apply mt-10 text-2xl font-bold text-ink;
+}
+
+.prose p {
+  @apply mt-4 leading-7 text-ink/70;
+}
