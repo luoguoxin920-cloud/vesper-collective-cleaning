@@ -14,7 +14,7 @@ export default function LeadForm({ formType = "Contact Request", buttonText = "S
     event.preventDefault();
     const form = event.currentTarget;
     const data = new FormData(form);
-    const accessKey = process.env.NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY;
+    const accessKey = process.env.NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY?.trim();
 
     if (!data.get("smsOptIn")) {
       setStatus("error");
